@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "c63e9427-c223-49c1-ad65-a96bbf008124": {
+      "ProjectGuid": "c63e9427-c223-49c1-ad65-a96bbf008124",
+      "DisplayName": "ShopWebApp",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "c1dcc190-06eb-444e-8415-92e529e8ef10": {
+      "ProjectGuid": "c1dcc190-06eb-444e-8415-92e529e8ef10",
+      "DisplayName": "ShopXamarinApp",
+      "ColorIndex": 1
+    },
+    "42f6aecc-0418-4a22-a6df-baf40d80d17e": {
+      "ProjectGuid": "42f6aecc-0418-4a22-a6df-baf40d80d17e",
+      "DisplayName": "ShopXamarinApp.Android",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}

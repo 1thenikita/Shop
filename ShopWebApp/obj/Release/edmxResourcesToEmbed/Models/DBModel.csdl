@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Price" Type="Double" Nullable="false" />
+    <Property Name="IsActual" Type="Boolean" Nullable="false" />
+    <Property Name="UserID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="User" Relationship="Self.Products_Users_ID_fk" FromRole="Products" ToRole="Users" />
+    <NavigationProperty Name="ProductsInPurchases" Relationship="Self.ProductsInPurchase_Products_ID_fk" FromRole="Products" ToRole="ProductsInPurchase" />
+  </EntityType>
+  <EntityType Name="ProductsInPurchase">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ProductID" Type="Int32" Nullable="false" />
+    <Property Name="PurchaseID" Type="Int32" Nullable="false" />
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="Product" Relationship="Self.ProductsInPurchase_Products_ID_fk" FromRole="ProductsInPurchase" ToRole="Products" />
+    <NavigationProperty Name="Purchase" Relationship="Self.ProductsInPurchase_Purchases_ID_fk" FromRole="ProductsInPurchase" ToRole="Purchases" />
+  </EntityType>
+  <EntityType Name="Purchase">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DatePurchase" Type="DateTime" Precision="3" />
+    <Property Name="TotalMoney" Type="Double" Nullable="false" />
+    <Property Name="UserID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="ProductsInPurchases" Relationship="Self.ProductsInPurchase_Purchases_ID_fk" FromRole="Purchases" ToRole="ProductsInPurchase" />
+    <NavigationProperty Name="User" Relationship="Self.Purchases_Users_ID_fk" FromRole="Purchases" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="Role">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Users" Relationship="Self.Users_Roles_ID_fk" FromRole="Roles" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Login" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DataLastEntry" Type="DateTime" Precision="3" />
+    <Property Name="RoleID" Type="Int32" Nullable="false" />
+    <Property Name="Balance" Type="Double" Nullable="false" />
+    <NavigationProperty Name="Products" Relationship="Self.Products_Users_ID_fk" FromRole="Users" ToRole="Products" />
+    <NavigationProperty Name="Purchases" Relationship="Self.Purchases_Users_ID_fk" FromRole="Users" ToRole="Purchases" />
+    <NavigationProperty Name="Role" Relationship="Self.Users_Roles_ID_fk" FromRole="Users" ToRole="Roles" />
+  </EntityType>
+  <Association Name="Products_Users_ID_fk">
+    <End Role="Users" Type="Self.User" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Products" Type="Self.Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Products">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ProductsInPurchase_Products_ID_fk">
+    <End Role="Products" Type="Self.Product" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="ProductsInPurchase" Type="Self.ProductsInPurchase" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Products">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="ProductsInPurchase">
+        <PropertyRef Name="ProductID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ProductsInPurchase_Purchases_ID_fk">
+    <End Role="Purchases" Type="Self.Purchase" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="ProductsInPurchase" Type="Self.ProductsInPurchase" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Purchases">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="ProductsInPurchase">
+        <PropertyRef Name="PurchaseID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Purchases_Users_ID_fk">
+    <End Role="Users" Type="Self.User" Multiplicity="1" />
+    <End Role="Purchases" Type="Self.Purchase" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Purchases">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Users_Roles_ID_fk">
+    <End Role="Roles" Type="Self.Role" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Users" Type="Self.User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Roles">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Users">
+        <PropertyRef Name="RoleID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Products" EntityType="Self.Product" />
+    <EntitySet Name="ProductsInPurchases" EntityType="Self.ProductsInPurchase" />
+    <EntitySet Name="Purchases" EntityType="Self.Purchase" />
+    <EntitySet Name="Roles" EntityType="Self.Role" />
+    <EntitySet Name="Users" EntityType="Self.User" />
+    <AssociationSet Name="Products_Users_ID_fk" Association="Self.Products_Users_ID_fk">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Products" EntitySet="Products" />
+    </AssociationSet>
+    <AssociationSet Name="ProductsInPurchase_Products_ID_fk" Association="Self.ProductsInPurchase_Products_ID_fk">
+      <End Role="Products" EntitySet="Products" />
+      <End Role="ProductsInPurchase" EntitySet="ProductsInPurchases" />
+    </AssociationSet>
+    <AssociationSet Name="ProductsInPurchase_Purchases_ID_fk" Association="Self.ProductsInPurchase_Purchases_ID_fk">
+      <End Role="Purchases" EntitySet="Purchases" />
+      <End Role="ProductsInPurchase" EntitySet="ProductsInPurchases" />
+    </AssociationSet>
+    <AssociationSet Name="Purchases_Users_ID_fk" Association="Self.Purchases_Users_ID_fk">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Purchases" EntitySet="Purchases" />
+    </AssociationSet>
+    <AssociationSet Name="Users_Roles_ID_fk" Association="Self.Users_Roles_ID_fk">
+      <End Role="Roles" EntitySet="Roles" />
+      <End Role="Users" EntitySet="Users" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

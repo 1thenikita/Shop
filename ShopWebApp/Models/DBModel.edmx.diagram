@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="56f18e02d0984f97a7c9772962e70982" Name="Diagram1">
+        <EntityTypeShape EntityType="DBModel.Product" Width="1.5" PointX="5.25" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBModel.ProductsInPurchase" Width="1.5" PointX="7.5" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBModel.Purchase" Width="1.5" PointX="5.25" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBModel.Role" Width="1.5" PointX="0.75" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBModel.User" Width="1.5" PointX="3" PointY="2.375" IsExpanded="true" />
+        <AssociationConnector Association="DBModel.Products_Users_ID_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="DBModel.ProductsInPurchase_Products_ID_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="DBModel.ProductsInPurchase_Purchases_ID_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="DBModel.Purchases_Users_ID_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="DBModel.Users_Roles_ID_fk" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

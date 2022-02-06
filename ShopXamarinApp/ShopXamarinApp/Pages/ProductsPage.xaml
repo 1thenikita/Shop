@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ShopXamarinApp.Pages.ProductsPage"
+             Title="Продукты">
+    <ListView x:Name="LviewProducts"
+            ItemSelected="LviewProducts_ItemSelected"
+            CachingStrategy="RecycleElement"
+              HasUnevenRows="True">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <StackLayout>
+                        <Label Text="{Binding Name, StringFormat='Продукт {0}'}" />
+                        <Label Text="{Binding Description}"/>
+                        <Label Text="{Binding Price, StringFormat='Цена: {0}'}"/>
+                        <Label Text="{Binding IsActualString}"/>
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>

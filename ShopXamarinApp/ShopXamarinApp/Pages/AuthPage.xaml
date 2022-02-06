@@ -1,12 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ShopXamarinApp.Pages.AuthPage">
+             x:Class="ShopXamarinApp.Pages.AuthPage"
+             Title="Аутентифицация">
     <ContentPage.Content>
-        <StackLayout>
-            <Entry x:Name="entryLogin" Placeholder="Логин" HorizontalOptions="Center" VerticalOptions="Center"/>
-            <Entry x:Name="entryPassword" Placeholder="Пароль" HorizontalOptions="Center" VerticalOptions="Center"/>
-            <Button x:Name="btnLogin" Text="Войти" Clicked="btnLogin_Clicked"></Button>
+        <StackLayout Orientation="Vertical">
+            <Entry x:Name="entryLogin" Placeholder="Логин"></Entry>
+            <Entry x:Name="entryPassword" Placeholder="Пароль" IsPassword="True"></Entry>
+            <Button x:Name="btnLogin" Clicked="btnLogin_Clicked" Text="Войти"></Button>
+            <StackLayout Orientation="Horizontal">
+                <CheckBox x:Name="cbVisiblePass" CheckedChanged="cbVisiblePass_CheckedChanged"></CheckBox>
+                <Label Text="Показать пароль"></Label>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <CheckBox x:Name="cbSaveUserData" CheckedChanged="cbSaveUserData_CheckedChanged"></CheckBox>
+                <Label Text="Сохранить логин и пароль"></Label>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

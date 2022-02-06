@@ -1,5 +1,8 @@
-﻿using ShopXamarinApp.Pages;
+﻿using ShopXamarinApp.Classes;
+using ShopXamarinApp.Models;
+using ShopXamarinApp.Pages;
 using System;
+using System.Collections.Generic;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -12,6 +15,10 @@ namespace ShopXamarinApp
             InitializeComponent();
 
             MainPage = new NavigationPage(new AuthPage());
+            MainPage.Title = (MainPage as NavigationPage).Title;
+
+            Global.Api = new ApiWorker();
+            Global.Cart = new List<Product>();
         }
 
         protected override void OnStart()

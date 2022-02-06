@@ -1,14 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "w2+/gzRMt0GUAXUMutJdua1eyuLeOCy0+XGE3/Jj4bXsbgrYzah8/g2GuS6em0Q9dPSqmXXfECq0jwHjEM4t0A==",
+  "dgSpecHash": "zk4z/Iwgi9mjqj3K7pCEuJg1pKa16gqXWglyFj2jwHXlpO8ur2Vag5/aa/8ULG9gRu2mAQUDN3VZaHChNT3oEw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\nik-801\\source\\repos\\Shop\\ShopXamarinApp\\ShopXamarinApp\\ShopXamarinApp.csproj",
+  "projectFilePath": "C:\\Users\\nik-8\\Documents\\Work\\Visual Studio\\Shop\\ShopXamarinApp\\ShopXamarinApp\\ShopXamarinApp.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\nik-801\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\nik-801\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
-    "C:\\Users\\nik-801\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
-    "C:\\Users\\nik-801\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
-    "C:\\Users\\nik-801\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+    "C:\\Users\\nik-8\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\nik-8\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\nik-8\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\nik-8\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\nik-8\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
   ],
   "logs": []
 }

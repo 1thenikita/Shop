@@ -36,6 +36,19 @@ namespace ShopWebApp.Controllers
             return Ok(user);
         }
 
+        // GET: api/User
+        [ResponseType(typeof(User))]
+        public async Task<IHttpActionResult> GetUserFromLoginAndPassword(User userBody)
+        {
+            User user = await db.Users.FirstOrDefaultAsync(_u => _u.Login == userBody.Login && _u.Password == userBody.Password);
+            if (user == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(user);
+        }
+
         // PUT: api/Users/5
         [ResponseType(typeof(void))]
         public async Task<IHttpActionResult> PutUser(int id, User user)

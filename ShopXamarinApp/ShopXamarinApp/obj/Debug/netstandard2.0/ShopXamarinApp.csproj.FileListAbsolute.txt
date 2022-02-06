@@ -13,3 +13,24 @@ C:\Users\nik-801\source\repos\Shop\ShopXamarinApp\ShopXamarinApp\obj\Debug\netst
 C:\Users\nik-801\source\repos\Shop\ShopXamarinApp\ShopXamarinApp\obj\Debug\netstandard2.0\ShopXamarinApp.dll
 C:\Users\nik-801\source\repos\Shop\ShopXamarinApp\ShopXamarinApp\obj\Debug\netstandard2.0\ref\ShopXamarinApp.dll
 C:\Users\nik-801\source\repos\Shop\ShopXamarinApp\ShopXamarinApp\obj\Debug\netstandard2.0\ShopXamarinApp.pdb
+C:\Users\nik-8\Documents\Work\Visual Studio\Shop\ShopXamarinApp\ShopXamarinApp\bin\Debug\netstandard2.0\ShopXamarinApp.deps.json
+C:\Users\nik-8\Documents\Work\Visual Studio\Shop\ShopXamarinApp\ShopXamarinApp\bin\Debug\netstandard2.0\ShopXamarinApp.dll
+C:\Users\nik-8\Documents\Work\Visual Studio\Shop\ShopXamarinApp\ShopXamarinApp\bin\Debug\netstandard2.0\ref\ShopXamarinApp.dll
+C:\Users\nik-8\Documents\Work\Visual Studio\Shop\ShopXamarinApp\ShopXamarinApp\bin\Debug\netstandard2.0\ShopXamarinApp.pdb
+C:\Users\nik-8\Documents\Work\Visual Studio\Shop\ShopXamarinApp\ShopXamarinApp\bin\Debug\netstandard2.0\Newtonsoft.Json.dll
+C:\Users\nik-8\Documents\Work\Visual Studio\Shop\ShopXamarinApp\ShopXamarinApp\bin\Debug\netstandard2.0\Newtonsoft.Json.xml
+C:\Users\nik-8\Documents\Work\Visual Studio\Shop\ShopXamarinApp\ShopXamarinApp\obj\Debug\netstandard2.0\ShopXamarinApp.csproj.AssemblyReference.cache
+C:\Users\nik-8\Documents\Work\Visual Studio\Shop\ShopXamarinApp\ShopXamarinApp\obj\Debug\netstandard2.0\ShopXamarinApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nik-8\Documents\Work\Visual Studio\Shop\ShopXamarinApp\ShopXamarinApp\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\nik-8\Documents\Work\Visual Studio\Shop\ShopXamarinApp\ShopXamarinApp\obj\Debug\netstandard2.0\Pages\AuthPage.xaml.g.cs
+C:\Users\nik-8\Documents\Work\Visual Studio\Shop\ShopXamarinApp\ShopXamarinApp\obj\Debug\netstandard2.0\Pages\MenuPage.xaml.g.cs
+C:\Users\nik-8\Documents\Work\Visual Studio\Shop\ShopXamarinApp\ShopXamarinApp\obj\Debug\netstandard2.0\ShopXamarinApp.AssemblyInfoInputs.cache
+C:\Users\nik-8\Documents\Work\Visual Studio\Shop\ShopXamarinApp\ShopXamarinApp\obj\Debug\netstandard2.0\ShopXamarinApp.AssemblyInfo.cs
+C:\Users\nik-8\Documents\Work\Visual Studio\Shop\ShopXamarinApp\ShopXamarinApp\obj\Debug\netstandard2.0\ShopXamarinApp.csproj.CoreCompileInputs.cache
+C:\Users\nik-8\Documents\Work\Visual Studio\Shop\ShopXamarinApp\ShopXamarinApp\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\nik-8\Documents\Work\Visual Studio\Shop\ShopXamarinApp\ShopXamarinApp\obj\Debug\netstandard2.0\ShopXamarinApp.csproj.CopyComplete
+C:\Users\nik-8\Documents\Work\Visual Studio\Shop\ShopXamarinApp\ShopXamarinApp\obj\Debug\netstandard2.0\ShopXamarinApp.dll
+C:\Users\nik-8\Documents\Work\Visual Studio\Shop\ShopXamarinApp\ShopXamarinApp\obj\Debug\netstandard2.0\ref\ShopXamarinApp.dll
+C:\Users\nik-8\Documents\Work\Visual Studio\Shop\ShopXamarinApp\ShopXamarinApp\obj\Debug\netstandard2.0\ShopXamarinApp.pdb
+C:\Users\nik-8\Documents\Work\Visual Studio\Shop\ShopXamarinApp\ShopXamarinApp\obj\Debug\netstandard2.0\Pages\ProductsPage.xaml.g.cs
+C:\Users\nik-8\Documents\Work\Visual Studio\Shop\ShopXamarinApp\ShopXamarinApp\obj\Debug\netstandard2.0\Pages\CartPage.xaml.g.cs

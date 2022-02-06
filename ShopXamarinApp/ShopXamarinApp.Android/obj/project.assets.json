@@ -3172,26 +3172,29 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\nik-801\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\nik-8\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nik-801\\source\\repos\\Shop\\ShopXamarinApp\\ShopXamarinApp.Android\\ShopXamarinApp.Android.csproj",
+      "projectUniqueName": "C:\\Users\\nik-8\\Documents\\Work\\Visual Studio\\Shop\\ShopXamarinApp\\ShopXamarinApp.Android\\ShopXamarinApp.Android.csproj",
       "projectName": "ShopXamarinApp.Android",
-      "projectPath": "C:\\Users\\nik-801\\source\\repos\\Shop\\ShopXamarinApp\\ShopXamarinApp.Android\\ShopXamarinApp.Android.csproj",
-      "packagesPath": "C:\\Users\\nik-801\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nik-801\\source\\repos\\Shop\\ShopXamarinApp\\ShopXamarinApp.Android\\obj\\",
+      "projectPath": "C:\\Users\\nik-8\\Documents\\Work\\Visual Studio\\Shop\\ShopXamarinApp\\ShopXamarinApp.Android\\ShopXamarinApp.Android.csproj",
+      "packagesPath": "C:\\Users\\nik-8\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\nik-8\\Documents\\Work\\Visual Studio\\Shop\\ShopXamarinApp\\ShopXamarinApp.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\nik-801\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\nik-8\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "monoandroid12.0"
@@ -3203,8 +3206,8 @@
       "frameworks": {
         "monoandroid12.0": {
           "projectReferences": {
-            "C:\\Users\\nik-801\\source\\repos\\Shop\\ShopXamarinApp\\ShopXamarinApp\\ShopXamarinApp.csproj": {
-              "projectPath": "C:\\Users\\nik-801\\source\\repos\\Shop\\ShopXamarinApp\\ShopXamarinApp\\ShopXamarinApp.csproj"
+            "C:\\Users\\nik-8\\Documents\\Work\\Visual Studio\\Shop\\ShopXamarinApp\\ShopXamarinApp\\ShopXamarinApp.csproj": {
+              "projectPath": "C:\\Users\\nik-8\\Documents\\Work\\Visual Studio\\Shop\\ShopXamarinApp\\ShopXamarinApp\\ShopXamarinApp.csproj"
             }
           }
         }
